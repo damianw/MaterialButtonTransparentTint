@@ -3,6 +3,8 @@ MaterialButton Transparent Background Tint Issue
 
 This project demonstrates a bug in `MaterialButton` (a widget in [Material Components for Android](https://github.com/material-components/material-components-android)).
 
+Issue: [material-components/material-components-android#1033](https://github.com/material-components/material-components-android/issues/1033)
+
 ## Symptom
 
 Setting a non-opaque background tint (via `setBackgroundTintList`) on a `MaterialButton` causes the new background tint to blend with the previous background tint, rather than replace it. This is especially noticeable when trying to set a transparent background tint, which has no effect.
